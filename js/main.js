@@ -8,9 +8,7 @@ var obj = {
     age: 24
 };
 var arr = ["Galinka", 25, true];
-var symb = Symbol();
 
 console.log(arr[1]);
-console.log(symb);
 
 console.log(obj.name + obj.age);
