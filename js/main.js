@@ -1,14 +1,17 @@
 'use strict';
 
-var name = "Galya";
-let age = 23;
-var boolean = "true";
-var obj = {
-    name: "Maks",
-    age: 24
-};
-var arr = ["Galinka", 25, true];
-
-console.log(arr[1]);
-
-console.log(obj.name + obj.age);
+let money = prompt("Ваш бюджет на месяц?", " ");
+let timeDate = prompt("Введите дату в формате YYYY-MM-DD", " ");
+console.log(money);
+console.log(timeDate);
+let expenses = {};
+let optionalExpenses = {};
+let income = [];
+let savings = false;
+let addDate = { money, timeDate };
+let stateInMonth = prompt("Введите обязательную статью расходов в этом месяце?", " ");
+let stateMoney = prompt("Во сколько обойдется?", " ");
+expenses.stateInMonth = stateMoney;
+console.log(expenses);
+let budjetOneDay = +money / 30;
+alert(budjetOneDay);
